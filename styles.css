@@ -1,0 +1,1157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #000000;
+    font-family: "Poppins", sans-serif;
+}
+
+/* navbar */ 
+
+.mensaje {
+    overflow: hidden; 
+    background-color: #f1f0a3;
+}
+
+@keyframes desplazarTexto {
+    0% {
+        transform: translateX(100%); 
+    }
+    100% {
+        transform: translateX(-100%); /
+    }
+}
+
+.mensaje-giratorio {
+    white-space: nowrap; 
+    animation: desplazarTexto 30s linear infinite; 
+    margin-bottom: 0px;
+    height: 30px;
+    margin-top: 5px;
+    font-weight: 500;
+    font-family:cursive
+}
+
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.swiper-button-prev::after{
+    font-size: 30px;
+    margin-right: 20px;
+}
+.swiper-button-next::after{
+    font-size: 30px;
+    margin-left: 20px;
+}
+.swiper-button-next{
+    color: #b81a1a;
+}
+.swiper-button-prev{
+    color: rgb(184, 26, 26);
+}
+
+.swiper-pagination-bullet{
+    background-color: rgb(141, 141, 139);
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #b81a1a;
+}
+
+.menu{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.navbar{
+    display: flex;
+    margin-top: 25px;
+}
+
+.menu-1{
+    margin-right: 180px;
+    display: flex;
+    align-items: center;
+
+}
+
+.logo-1{
+    width: 0;
+    border-radius: 50%;
+}
+
+.logo-2{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.socials{
+    display: flex;
+}
+
+.social{
+    margin: 0 10px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid rgb(247, 248, 248);
+    border-radius: 50%;
+}
+
+.social:hover{
+    background-color:#b81a1a
+}
+
+.social .bi{
+    margin: 11px;
+    color: greenyellow;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+    display: block;
+}
+
+.menu .navbar ul li a:hover{
+    color:#b81a1a
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-content{
+    margin-top: 200px;
+    padding-bottom: 50px;
+}
+
+.portada-caja{
+    height: 700px;
+}
+
+.slider{
+    display: flex;
+    align-items: center;
+}
+
+.slider-txt{
+    margin-left: 85px;
+    width: 50%;
+}
+
+.slider-txt h1{
+    font-size: 45px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.slider-txt p{
+    font-size: 18px;
+    color: rgb(202, 201, 201)
+}
+
+.botones{
+    margin-top: 50px;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 15px 35px;
+    border: 2px solid #b81a1a;
+    color: white;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+
+.btn-1:hover{
+    border: 2px solid #b81a1a;
+    background-color: #b81a1a;
+}
+
+.slider-img{
+    width: 30%;
+}
+
+.slider-img img{
+    margin-right: 225px;
+    width: 300px;
+    margin-left: 5px;
+    
+}
+
+.products{
+    background-color: #2c1111;
+}
+
+.tabs{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 0px;
+}
+
+.tabs .tab{
+    order: 99;
+    flex-grow: 1;
+    width: 100%;
+    display: none;
+    padding-top: 25px;
+}
+
+.tabs input[type="radio"] {
+    display: none;
+}
+
+.tabs input[type="radio"]:checked + label {
+    border-bottom: 2px solid #b81a1a;
+    color: white;
+}
+
+.tabs input[type="radio"]:checked + label + .tab {
+    display: block;
+}
+
+.swiper-slide{
+    display: flex;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    margin: 0 10px;
+}
+
+.ofertas_produ{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #000000; 
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 40px;
+
+}
+
+.product-img {
+    width: 50%;
+    text-align: left;
+}
+
+.product-hover{
+    transition: transform 0.3s ease;
+}
+.product-hover:hover{
+    transform: scale(1.5);
+}
+
+.product-img h4{
+    display: inline-block;
+    padding: 5px 7px;
+    line-height: 15px;
+    color:white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 800;
+    border: 2px solid #555555 ;
+    border-radius: 10px;
+    margin-bottom: 50px;
+
+}
+
+.product-img img{
+    width: 150px;
+    height: 180px;
+}
+
+.product-txt{
+    width: 50%;
+    margin-left: 10px;
+    text-align: left;
+}
+
+/*NOSOTROS*/
+
+.info{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.info-img{
+    width: 50%;
+}
+
+.info-img img{
+    width: 500px;
+    height: 380px;
+}
+
+.info-txt{
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.info-txt h2{
+    font-size: 40px;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    justify-content: center;
+    display: flex;
+}
+
+.info-txt p{
+    font-size: 18px;
+    color:#ffffff;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.btn-2 {
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #b81a1a;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+
+.btn-2:hover{
+    background-color: #470707;
+}
+
+.txt{
+    color: white
+}
+
+.txt h4 {
+    font-size: 20px;
+    color:rgb(185, 185, 180);
+    margin-bottom: 30px;
+}
+
+.txt p{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.imagen-container {
+    margin-top: 20px;
+}
+
+
+/*   ESTILO CARTA - MENU  */
+
+.carta-menu{
+    padding: 50px 0 80px 0;
+}
+
+.txt-menu-deslizar{
+    color: white;
+    font-size: 18px;
+}
+.carta-menu h2{
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-slide{
+    background-position: center;
+    background-size: cover;
+    width: 550px;
+}
+
+.swiper-slide img{
+    display: inline-block;
+    width:100%;
+}
+
+/* OFERTAS */
+
+#Ofertas {
+    background-image: url('images/wooden-texture.webp');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    object-fit:cover;
+    height: 800px;
+}
+
+.caja-grid{
+    display: flex;
+    align-items: center;
+    height: 600px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 15px;
+}
+
+.image-grid img{
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* BOTON WPP */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: #02fa5d;
+    width: 160px;
+    z-index: 999;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+
+.whatsapp-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.whatsapp-button a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+/* FOOTER */
+.footer{
+    padding: 50px;
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px
+}
+
+.caja-logo-footer{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-footer{
+    width: 200px;
+    border-radius: 50%;
+    height: 200px;
+}
+
+.links h4{
+    display: flex;
+    justify-content: center;
+    color: #f1f0a3;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 26;
+}
+
+.links .ul_footer li {
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+    margin-bottom: 5px; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.envios-domicilio {
+    background-color: #f1f0a3;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    /* position: absolute; */
+    order: 2;
+}
+
+.envios-domicilio p{
+    font-size: 20px;
+    align-items: center;
+    margin-bottom: 0;
+    margin-right: 10px;
+    color: #080202;
+    font-weight: 500;
+}
+
+.img-delivery{
+    border-radius: 50%;
+    height: auto;
+    width: 50px;
+}
+
+.ul_footer{
+    padding-left: 0;
+}
+
+.footer2{
+    display: flex;
+    flex-direction: column;
+}
+.creditos{
+    background-color: #fffefe;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    display: flex;
+    height: 30px;
+    order:3;
+}
+
+.creditos h4{
+    font-size: 12px;
+    margin: 5px;
+}
+
+.creditos a{
+    color: #2b2b27
+}
+
+
+
+
+
+/*   MEDIA QUEARY    */
+
+/* Estilos para dispositivos MEDIANOS */
+@media(max-width: 991px) {
+    .menu{
+        padding: 20px;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .menu-2{
+        display: none;
+    }
+
+
+    /*
+    .menu-icono{
+        height: 100px;
+        width: 100px;
+    } 
+    */
+
+    .logo-1 {
+        width: 100px;
+    }
+
+    .logo-2 {
+        width: 0;
+    }
+
+    .menu label{
+        display: initial;
+        background-color: white;
+        width: 80px;
+        justify-content: center;
+        display: flex;
+        height: 60px;
+        margin-top: 20px;
+        border-radius: 20%;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #0e0606;
+        display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header-content{
+        padding: 20px;
+        display: none;
+    }
+
+    .slider-txt{
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .slider-txt h1{
+        font-size: 40px;
+    }
+
+    .slider-txt p{
+        font-size: 22px;
+    }
+
+    .menu-slider{
+        width: 90%;
+    }
+
+    .btn-1{
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+
+    .slider-img{
+        width: 300px; 
+        height: 300px; 
+        overflow: hidden; 
+        border: 1px solid #ccc; 
+    }
+
+    .slider-img img{
+        width: 100%; 
+        height: auto; 
+        display: block; 
+        margin-left: 0px;
+    }
+
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets,.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-button-fraction{
+        bottom: -7px;
+    }
+
+    .tab{
+        margin-left: 10px;
+    }
+
+    .tabs{
+        padding: 20px;
+    }
+
+    .tabs label{
+        width: 25%;
+    }
+
+    .nombre_produ{
+        font-size: 10px;
+        font-weight: 300;
+        width: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .nombre_produ3{
+        font-size: 10px;
+        font-weight: 300;
+        width: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 25px;
+    }
+
+    .carta-menu{
+        padding: 20px;
+        margin-top: 150px;
+    }
+
+    .carta-menu h2{
+        font-size: 40px;
+    }
+
+    .ofertas_produ{
+        font-size: 40px;
+    }
+
+    .info{
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .info-img{
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    .info-img img{
+        width: 300px;
+        height: 200px;
+        
+    }
+
+    .info-txt{
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .info-txt h2{
+        margin-top: 20px;
+        font-size: 40px;
+    }
+
+    .info-txt p{
+        font-size: 20px;
+        margin-bottom: 15px;
+        margin-left: 0;
+    }
+
+    .txt h4 {
+        font-size: 20px;
+        color:rgb(185, 185, 180);
+    }
+
+    .btn-1{
+        font-size: 20px;
+    }
+
+    .horario {
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .horario-info h2{
+        font-size: 40px;
+        margin-bottom: 35px;
+        
+    }
+
+    .horario-txt{
+        flex-direction: column;
+    }
+
+    .socials{
+        justify-content: center;
+    }
+    
+    .social img{
+        margin: 8px 0 0 0;
+    }
+    
+    .padre_ubi{
+        padding-bottom: 30px;
+        padding: 0;
+    }
+    .map{
+        border-radius: 50%;
+        border: 1px solid rgb(247, 248, 248);
+    }
+
+    .logo-footer{
+        height: 150px;
+    }
+
+    .footer {
+        padding: 30px;
+        gap: 20px;
+    }
+
+    .links h4{
+        display: block;
+    }
+
+    .links .ul_footer li {
+        color: white;
+        font-size: 16px;
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+    .carta-menu{
+        padding: 20px;
+    }
+
+    .swiper-slide{
+        background-position: center;
+        background-size: cover;
+        width: 550px;
+    }
+    
+    .swiper-slide img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    
+    .caja_card {
+        flex-basis: calc(50% - 20px); 
+    }
+
+    .caja-grid{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 90px;
+    }
+
+
+    .image-grid {
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 60px;
+
+    }
+    .image-grid img{
+        width: 220px;
+        object-fit: cover;
+        margin-bottom: 10px;
+        
+    }
+
+    .whatsapp-button{
+        position: fixed;
+        bottom: 20px;
+        right: 0;
+        display: flex;
+        justify-content: end;
+        height: 100px;
+        background-color: #02fa5d;
+        width: 100px;
+        z-index: 999;
+        font-weight: 600;
+        margin-bottom: 30px;
+        border-radius: 50%;
+    }
+
+    .whatsapp-button img{
+        width: 50px;
+        height: 50px;
+        margin-right: 12px;
+    }
+
+    .whatsapp-button .wpp_text{
+        display: none;
+    }
+
+    .whatsapp-button a{
+        font-size: 25px;
+        margin-right: 10px;
+    }
+
+    .envios-domicilio p {
+        font-size: 22px;
+        align-items: center;
+        margin-bottom: 0;
+        /* margin-right: 10px; */
+        color: #080202;
+        font-weight: 500;
+    }
+
+}
+
+/* Estilos para dispositivos PEQUEÑOS */
+
+@media screen and (max-width: 799px) {
+    .txt-menu-deslizar{
+        font-size: 17px;
+    }
+    .mensaje-giratorio {
+        white-space: nowrap; 
+        animation: desplazarTexto 16s linear infinite; 
+        margin-bottom: 0px;
+        height: 30px;
+        margin-top: 5px;
+        font-weight: 500;
+        font-family:cursive
+    }
+    .carta-menu h2{
+        padding-top: 60px;
+        margin-top: 100px;
+        font-size: 35px;
+    }
+
+    .carta-menu {
+        margin-top: 30px;
+    }
+
+    .menu {
+        position: absolute;
+    }
+
+    .image-grid {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0;
+    }
+
+    .image-grid img{
+        width: 220px;
+        object-fit: cover;
+    }
+
+    .header-content {
+        display: none;
+    }
+
+    .info{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 665px) {
+    .txt-menu-deslizar{
+        font-size: 15px;
+    }
+    #ofertas{
+        height: 1000px;
+    }
+    .caja-grid{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .image-grid{
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 100px;
+    }
+
+    .image-grid img{
+        height: 210px;
+        width: 150px;
+        object-fit: cover;
+    }
+
+    .info-txt h2{
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+
+    .horario-info h2{
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+
+    .padre_ubi{
+        padding: 0;
+    }
+
+    .ofertas_produ h2{
+        font-size: 35px;
+    }
+
+    .logo-footer{
+        display: none;
+    }
+
+    .footer{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .links h4{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .info{
+        display: none;
+    }
+
+    .whatsapp-button{
+        width: 60px;
+        height: 60px;
+        justify-content: center;
+    }
+
+    .whatsapp-button a{
+        margin-left: 14px;
+        margin-right: 0;
+    }
+
+    .whatsapp-button img{
+        height: 30px;
+        width: 30px;
+        
+    }
+
+
+}
+
+@media screen and (max-width: 480px){
+    .txt-menu-deslizar{
+        font-size: 13px;
+        margin: 20px;
+    }
+    .sobre_nosotros{
+        display: none;
+    }
+
+    .products{
+        margin-left: 0px;
+    }
+
+    .info-img{
+        margin-right: 40px;
+    }
+
+    .info-txt h2{
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    .ofertas_produ{
+        font-size: 25px;
+    }
+
+    .carta-menu h2{
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .horario-info h2{
+        font-size: 25px;
+    }
+
+    .info-text {
+        color: white;
+    }
+
+    .image-grid{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 4px;
+        margin-top: 100px;
+    }
+
+    .txt h4{
+        font-size: 15px;
+    }
+
+    .btn-1{
+        font-size: 15px;
+    }
+
+    .whatsapp-button{
+        position: fixed;
+        bottom: 20px;
+        right: 0;
+        display: flex;
+        height: 60px;
+        background-color: #02fa5d;
+        width: 60px;
+        z-index: 999;
+        font-weight: 600;
+        margin-bottom: 30px;
+        border-radius: 50%;
+    }
+
+    .whatsapp-button img{
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+    }
+
+    .whatsapp-button a{
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+    .whatsapp-button .wpp_text{
+        display: none;
+    }
+
+    .info {
+        display: none;
+    }
+
+    .info-img{
+        margin-right: 0px;
+    }
+
+    .info-txt{
+        margin-left: 0px;
+    }
+
+    .info-txt p{
+        margin-left: 0px;
+    }
+
+    .carta-menu{
+        padding: 0px
+    }
+
+    .swiper-slide img{
+        margin-top: 0px;
+        width: 360px;
+        display: flex;
+        justify-content: center;
+        margin-left: 95px;
+        height: 600px;
+    }
+
+    .envios-domicilio p {
+        font-size: 16px;
+    }
+}
+

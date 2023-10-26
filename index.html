@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="author" content="Pizzeria el gordo y la flaca">
+    <meta name="audience" content="all">
+    <meta name="description" content="Encarga Tu Pizza, Milanesa, Empanada Que Mas Te Guste, Promos, Ofertas, Pizzas Especiales">
+    <meta name="keywords" content="Pizzas, Empanadas, Milanesas, Pizzeria, Promociones">
+    <meta name="robots" content="index, main, images">
+    <meta name="category" content="Nuestros Menus, Promociones, Nosotros, Información, whatsapp">
+    <title>Elgordoylaflaca</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="mensaje">
+        <p class="mensaje-giratorio">¿Listo para hacer tu pedido? Contáctanos a través de nuestro WhatsApp.</p>
+    </div>
+    <header>
+
+        <div class="menu container">
+
+            <img class="logo-1" src="./images/logo.png" alt="#">
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="./images/menuicono.png" class="menu-icono" alt="">
+            </label>
+
+            <nav class="navbar">
+                <div class="menu-1">
+                    <ul>
+                        <li><a href="/index.html">Inicio</a></li>
+                        <li><a href="#Menu">Nuestros Menús</a></li>
+                        <li><a href="#Ofertas">Promociones</a></li>
+                        <li class="sobre_nosotros"><a href="#Nosotros">Sobre Nosotros</a></li>
+                        <li><a href="#Info">Información</a></li>
+                    </ul>
+                </div>
+                <img class="logo-2" src="./images/logo.png" alt="#">
+            </nav>
+        </div>
+
+        <div class="header-content container">
+            <div class="swiper mySwiper-1">
+                <div class="swiper-wrapper portada-caja">
+
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h1>Pizza</h1>
+                                <p>¡Deliciosas pizzas recién salidas del horno! Ven y descubre el sabor auténtico de Italia en cada bocado. Nuestra pizza artesanal te llevará en un viaje de sabores irresistibles. Ingredientes frescos, masa crujiente y una amplia variedad de opciones para satisfacer todos los gustos. ¿Te atreves a probar la pizza perfecta? ¡No te resistas, ordénala ahora y disfruta de una experiencia gastronómica única!</p>
+                            </div>
+                            <div class="slider-img">
+                                <img src="./images/pizzanuevo.jpg"  alt="#">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h1>Empanadas</h1>
+                                <p>¡Descubre el sabor auténtico de Tucumán en cada bocado desde Buenos Aires! Nuestras empanadas tucumanas te transportarán directamente a la cuna de esta delicia culinaria. Sabores tradicionales, un relleno jugoso y sabroso que te hará desear más. Desde las clásicas de carne hasta opciones de pollo, Jamon y queso, tenemos el sabor perfecto para todos los paladares. ¿Estás listo para probar una experiencia gastronómica única? ¡No esperes más, ordénalas ahora y déjate cautivar por la verdadera esencia de las empanadas tucumanas!</p>
+                            </div>
+                            <div class="slider-img">
+                                <img src="./images/emapanadasnuevo.jpg"  alt="#">
+                            </div> 
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h1>Milanesas</h1>
+                                <p>¡Descubre el sabor irresistible de nuestras milanesas caseras!
+                                    En el gordo y la flaca, nos enorgullece ofrecerte las más deliciosas y jugosas milanesas, preparadas con los mejores ingredientes y con todo el amor y cuidado que le ponemos a cada plato. Desde las clásicas milanesas de ternera simples hasta las irresistibles opciones napolitana, Jamon y queso, tenemos una amplia variedad de sabores para satisfacer todos los paladares.
+                                    Nuestras milanesas se destacan por su crujiente empanado y su tierna carne, siempre fresca y de la más alta calidad. Además, las acompañamos con guarniciones irresistibles como papas fritas doradas y crocantes.</p>
+                            </div>
+                            <div class="slider-img">
+                                <img src="./images/milanuevo.jpg"  alt="Imagen no apta para tu dispositivo">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div class="whatsapp-button">
+            <a href="https://api.whatsapp.com/send?phone=%2B5491131578365" target="_blank">
+                <img src="./images/whatsappLogo.png" alt="WhatsApp" class="mb-1" >
+                <span class="wpp_text">WhatsApp</span>
+            </a>
+        </div>
+
+    </header>
+
+    <section class="carta-menu container" id="Menu">
+        <h2>Nuestros Menús</h2>
+        <p class="txt-menu-deslizar">¡Descubre nuestra increíble selección de platos mientras deslizas las imágenes hacia el lado que más te guste! <span style="font-size: 70%;">(Izquierda o Derecha)</span></p>
+
+        <div class="swiper mySwiper-carta">
+            <div class="swiper-wrapper caja-menus">
+                <div class="swiper-slide menu-slider">
+                    <img src="./images/MenuPIZZA.jpg" alt="Pizza" />
+                </div>
+                <div class="swiper-slide menu-slider">
+                    <img src="./images/MenuESPE.jpg" alt="Especialidades" />
+                </div>
+                <div class="swiper-slide menu-slider">
+                    <img src="./images/MenuMILANESA.jpg" alt="Milanesa" />
+                </div>
+                <div class="swiper-slide menu-slider">
+                    <img src="./images/MenuEMPANADAS.jpg" alt="Empanadas" />
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="products" id="Ofertas">
+        <h2 class="ofertas_produ">PROMOS ESPECIALES</h2>
+        
+        <div class="caja-grid">
+            <div class="image-grid">
+                <img src="./images/ofertas/1.jpg" alt="Imagen 1">
+                <img src="./images/ofertas/2.jpg" alt="Imagen 2">
+                <img src="./images/ofertas/3.jpg" alt="Imagen 3">
+                <img src="./images/ofertas/4.jpg" alt="Imagen 4">
+                <img src="./images/ofertas/5.jpg" alt="Imagen 5">
+            </div>
+        </div>
+    
+    </section>
+
+    <section class="info container" id="Nosotros">
+
+        <div class="info-img">
+            <img src="./images/infofooter.png" alt="">
+            <img src="./images/pizzas/choclorucula.jpg" alt="">
+        </div>
+
+        <div class="info-txt">
+            <h2>Sobre Nosotros</h2>
+            <p>¡Bienvenidos a nuestra rotisería familiar "El gordo y la Flaca" ubicada en la hermosa localidad de Grand Bourg, zona norte de Malvinas Argentinas! En nuestra cocina, la dedicación, responsabilidad y amor son los ingredientes fundamentales con los que cocinamos día a día.</p>
+
+            <p>Nuestra pasión por la gastronomía y el compromiso con nuestros clientes nos impulsan a ofrecer alimentos de alta calidad y sabor inigualable.</p>
+
+            <p>Nuestro equipo está entusiasmado por seguir brindando platos deliciosos y únicos, con el sabor casero que nos caracteriza. ¡Esperamos contar con su presencia y confianza en nuestra rotisería!</p>
+
+            <p>Agradecemos sinceramente su apoyo y esperamos poder servirles con nuestro corazón y alma.</p> <p><span class="btn-2" >¡Gracias por ser parte de nuestra historia!</span></p>
+        </div>
+
+    </section>
+
+    <footer id="Info">
+        <div class="footer">
+            <div class="caja-logo-footer">
+                <img class="logo-footer" src="./images/logo.png" alt="">
+            </div>
+            <div class="links">
+                <h4>Dirección:</h4>
+                <ul class="ul_footer">
+                    <li>Grand Bourg - Malvinas Argentinas</li>
+                    <li>Capitan Bermudez 2076</li>
+                    <li>Entre: Fray Luis Beltran y Fragata Heroina</li>
+                </ul>
+            </div>
+            <div class="links">
+                <h4>Dias y Horarios:</h4>
+                <ul class="ul_footer">
+                    <li>Abierto de: Viernes a Domingo</li>
+                    <li>Desde: 20hs a 23.30hs</li>
+                </ul>
+            </div>
+            <div class="links">
+                <h4>Ubicación:</h4>
+                <ul class="ul_footer">
+                    <li><iframe class_="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1644.5081573348784!2d-58.72342506106348!3d-34.47711038216326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca289a719819f%3A0x1e5b46bc76d22ced!2sCap.%20Berm%C3%BAdez%202076%2C%20B1615CKU%20Grand%20Bourg%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1689036287279!5m2!1ses!2sar" width="100%" height="180" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="envios-domicilio">
+                <p>Realizamos envíos a domicilio</p>
+                <img src="./images/delivery.jpg" class="img-delivery">
+            </div>
+            <div class="creditos">
+                <h4></i> Copyright 2023 - Web creada por <a href="https://www.linkedin.com/in/crisrodriguez95/">Rodriguez Cristian</a></h4>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="main.js"></script>
+</body>
+</html>
